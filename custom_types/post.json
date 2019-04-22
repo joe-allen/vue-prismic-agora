@@ -1,0 +1,77 @@
+{
+  "Main" : {
+    "uid" : {
+      "type" : "UID",
+      "config" : {
+        "label" : "slug",
+        "placeholder" : "URL Slug"
+      }
+    },
+    "post_title" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1",
+        "label" : "Post Title"
+      }
+    },
+    "post_sub_title" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading2",
+        "label" : "Post Sub Title"
+      }
+    },
+    "post_author_image" : {
+      "type" : "Image",
+      "config" : {
+        "constraint" : { },
+        "thumbnails" : [ ],
+        "label" : "Post Author Image"
+      }
+    },
+    "post_author" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Post Author",
+        "placeholder" : "Johnny Savior"
+      }
+    },
+    "post_date" : {
+      "type" : "Timestamp",
+      "config" : {
+        "label" : "Post Date"
+      }
+    },
+    "post_hero_image" : {
+      "type" : "Image",
+      "config" : {
+        "constraint" : { },
+        "thumbnails" : [ ],
+        "label" : "Post Hero Image"
+      }
+    },
+    "post_body_content" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph, heading3, strong, em, hyperlink, image, list-item",
+        "allowTargetBlank" : true,
+        "label" : "Post Body Content"
+      }
+    },
+    "post_call_to_action" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "post_cta_link" : {
+            "type" : "Link",
+            "config" : {
+              "allowTargetBlank" : true,
+              "label" : "Post CTA Link"
+            }
+          }
+        },
+        "label" : "Post Call To Action"
+      }
+    }
+  }
+}
